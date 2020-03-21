@@ -6224,11 +6224,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/dummer-isaiah/revature_projects/p1_proj/p1-dummer-isaiah/PizzaBox.Storing/PizzaBox.Storing.csproj",
+      "projectUniqueName": "/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Storing/PizzaBox.Storing.csproj",
       "projectName": "PizzaBox.Storing",
-      "projectPath": "/home/dummer-isaiah/revature_projects/p1_proj/p1-dummer-isaiah/PizzaBox.Storing/PizzaBox.Storing.csproj",
+      "projectPath": "/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Storing/PizzaBox.Storing.csproj",
       "packagesPath": "/home/dummer-isaiah/.nuget/packages/",
-      "outputPath": "/home/dummer-isaiah/revature_projects/p1_proj/p1-dummer-isaiah/PizzaBox.Storing/obj/",
+      "outputPath": "/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Storing/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/dummer-isaiah/.nuget/NuGet/NuGet.Config"
@@ -6242,8 +6242,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "/home/dummer-isaiah/revature_projects/p1_proj/p1-dummer-isaiah/PizzaBox.Domain/PizzaBox.Domain.csproj": {
-              "projectPath": "/home/dummer-isaiah/revature_projects/p1_proj/p1-dummer-isaiah/PizzaBox.Domain/PizzaBox.Domain.csproj"
+            "/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Domain/PizzaBox.Domain.csproj": {
+              "projectPath": "/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Domain/PizzaBox.Domain.csproj"
             }
           }
         }

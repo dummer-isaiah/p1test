@@ -2,7 +2,7 @@
 
 namespace PizzaBox.Storing.Migrations
 {
-    public partial class second : Migration
+    public partial class third : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -164,9 +164,9 @@ namespace PizzaBox.Storing.Migrations
                 columns: new[] { "CrustId", "Name", "Price" },
                 values: new object[,]
                 {
-                    { 637203790220629861L, "Thin Crust", 2.00m },
-                    { 637203790220651509L, "Deep Dish", 4.00m },
-                    { 637203790220651573L, "New York Style", 3.00m }
+                    { 637204041966931519L, "Thin Crust", 2.00m },
+                    { 637204041966960302L, "Deep Dish", 4.00m },
+                    { 637204041966960394L, "New York Style", 3.00m }
                 });
 
             migrationBuilder.InsertData(
@@ -174,9 +174,9 @@ namespace PizzaBox.Storing.Migrations
                 columns: new[] { "SizeId", "Name", "Price" },
                 values: new object[,]
                 {
-                    { 637203790220664238L, "Large", 12.00m },
-                    { 637203790220664671L, "Medium", 10.00m },
-                    { 637203790220664694L, "Small", 8.00m }
+                    { 637204041966979578L, "Large", 12.00m },
+                    { 637204041966980132L, "Medium", 10.00m },
+                    { 637204041966980167L, "Small", 8.00m }
                 });
 
             migrationBuilder.InsertData(
@@ -193,9 +193,9 @@ namespace PizzaBox.Storing.Migrations
                 columns: new[] { "ToppingId", "Name", "Price" },
                 values: new object[,]
                 {
-                    { 637203790220665570L, "Cheese", 0.25m },
-                    { 637203790220665891L, "Pepperoni", 0.50m },
-                    { 637203790220665919L, "Tomato Sauce", 0.75m }
+                    { 637204041966981362L, "Cheese", 0.25m },
+                    { 637204041966981880L, "Pepperoni", 0.50m },
+                    { 637204041966981920L, "Tomato Sauce", 0.75m }
                 });
 
             migrationBuilder.InsertData(

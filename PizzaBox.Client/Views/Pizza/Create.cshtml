@@ -4,21 +4,25 @@
 @Html.AntiForgeryToken()
 
   <select asp-for="@Model.Crust">
-      @foreach (var item in Model.CrustList)
+      @foreach (var item in @Model.CrustList)
       {
-          <option value="item.Name">item</option>
+          <option value="@item.Name">@item.Name</option>
       }
   </select>
 
-  @foreach (var item in Model.SizeList)
+  @foreach (var item in @Model.SizeList)
   {
-      @Html.RadioButtonFor(pvm => pvm.Size, item.Name)
+    <label>
+      @Html.RadioButtonFor(pvm => pvm.Size, @item.Name)@item.Name
+      </label>
   }
 
-  @foreach (var item in Model.ToppingList)
+  @* @foreach (var item in @Model.ToppingList)
   {
-      <input type="checkbox" name="Model.Toppings" value="item.Name" />
-  }
+      <label>
+      <input type="checkbox" name="@item.Name" value="item" />@item.Name
+      </label>
+  } *@
 
   <button type="submit">Create</button>
 

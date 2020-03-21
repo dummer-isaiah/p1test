@@ -12,3 +12,14 @@
 /home/dummer-isaiah/revature_projects/p1_proj/p1-dummer-isaiah/PizzaBox.Storing/obj/Debug/netstandard2.0/PizzaBox.Storing.csproj.CopyComplete
 /home/dummer-isaiah/revature_projects/p1_proj/p1-dummer-isaiah/PizzaBox.Storing/obj/Debug/netstandard2.0/PizzaBox.Storing.dll
 /home/dummer-isaiah/revature_projects/p1_proj/p1-dummer-isaiah/PizzaBox.Storing/obj/Debug/netstandard2.0/PizzaBox.Storing.pdb
+/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Storing/bin/Debug/netstandard2.0/PizzaBox.Storing.deps.json
+/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Storing/bin/Debug/netstandard2.0/PizzaBox.Storing.dll
+/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Storing/bin/Debug/netstandard2.0/PizzaBox.Storing.pdb
+/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Storing/bin/Debug/netstandard2.0/PizzaBox.Domain.dll
+/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Storing/bin/Debug/netstandard2.0/PizzaBox.Domain.pdb
+/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Storing/obj/Debug/netstandard2.0/PizzaBox.Storing.csprojAssemblyReference.cache
+/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Storing/obj/Debug/netstandard2.0/PizzaBox.Storing.AssemblyInfoInputs.cache
+/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Storing/obj/Debug/netstandard2.0/PizzaBox.Storing.AssemblyInfo.cs
+/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Storing/obj/Debug/netstandard2.0/PizzaBox.Storing.csproj.CopyComplete
+/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Storing/obj/Debug/netstandard2.0/PizzaBox.Storing.dll
+/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Storing/obj/Debug/netstandard2.0/PizzaBox.Storing.pdb

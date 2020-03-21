@@ -14,3 +14,11 @@
 /home/dummer-isaiah/revature_projects/p1_proj/p1-dummer-isaiah/PizzaBox.Domain/obj/Debug/netstandard2.0/PizzaBox.Domain.AssemblyInfo.cs
 /home/dummer-isaiah/revature_projects/p1_proj/p1-dummer-isaiah/PizzaBox.Domain/obj/Debug/netstandard2.0/PizzaBox.Domain.dll
 /home/dummer-isaiah/revature_projects/p1_proj/p1-dummer-isaiah/PizzaBox.Domain/obj/Debug/netstandard2.0/PizzaBox.Domain.pdb
+/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Domain/bin/Debug/netstandard2.0/PizzaBox.Domain.deps.json
+/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Domain/bin/Debug/netstandard2.0/PizzaBox.Domain.dll
+/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Domain/bin/Debug/netstandard2.0/PizzaBox.Domain.pdb
+/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Domain/obj/Debug/netstandard2.0/PizzaBox.Domain.csprojAssemblyReference.cache
+/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Domain/obj/Debug/netstandard2.0/PizzaBox.Domain.AssemblyInfoInputs.cache
+/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Domain/obj/Debug/netstandard2.0/PizzaBox.Domain.AssemblyInfo.cs
+/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Domain/obj/Debug/netstandard2.0/PizzaBox.Domain.dll
+/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Domain/obj/Debug/netstandard2.0/PizzaBox.Domain.pdb

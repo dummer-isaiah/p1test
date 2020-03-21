@@ -8,28 +8,21 @@ namespace PizzaBox.Client.Models
   public class PizzaViewModels
   {
 
-    private PizzaRepository _pr;
-    private CrustRepository _cr;
+    
+    private CrustRepository _cr = new CrustRepository();
 
-    private SizeRepository _sr;
+    private SizeRepository _sr = new SizeRepository();
 
-    private ToppingRepository _tr;
+    private ToppingRepository _tr = new ToppingRepository();
   
 
-    public PizzaViewModels(PizzaRepository prepository,CrustRepository crustRepository,SizeRepository sizeRepository,ToppingRepository trepository)
-    {
-      _pr = prepository;
-      _cr = crustRepository;
-      _sr = sizeRepository;
-      _tr = trepository;
-    }
 
     public List<Crust> CrustList { get; set; }
     public List<Size> SizeList { get; set; }
     public List<Topping> ToppingList { get; set; }
 
-    public Crust Crust { get; set; }
-    public Size Size { get; set; }
+    public string Crust { get; set; }
+    public string Size { get; set; }
     public List<Topping> Toppings { get; set; }
 
     public PizzaViewModels()

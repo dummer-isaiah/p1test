@@ -1,0 +1,36 @@
+name: $(date:yyyyMMdd)$(rev:.rr)
+
+pr:
+  -master
+
+trigger:
+  -master
+
+stages:
+  stage: build
+    jobs:
+      - job: build_dotnet
+        pool:
+          vmImage: ubuntu-18.04
+        steps:
+          - script: dotnet build
+  
+  stage: test
+    jobs:
+      - job: test
+        pool:
+          vmImage: ubuntu-18.04
+        steps:
+          - script: dotnet test --collect:"XPlat Code Coverage"
+  stage: pack
+    jobs:
+      - job:
+        pool:
+          vmImage: ubuntu-18.04
+        steps:
+          - script: |
+              docker login
+              docker image build -f dockerfile -t p1_proj/p1-dummmer-isaiah
+              docker image push p1_proj/p1-dummmer-isaiah
+              docker logout
+

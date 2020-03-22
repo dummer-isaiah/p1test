@@ -14,6 +14,8 @@ namespace PizzaBox.Domain.Models
 
     public decimal Price{get; set;}
 
+    public bool HasOrder { get; set; }
+
     #region NAVIGATIONAL PROPERTIES
     public Crust Crust { get; set; }
 

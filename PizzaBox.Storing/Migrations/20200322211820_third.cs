@@ -108,6 +108,7 @@ namespace PizzaBox.Storing.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(nullable: true),
                     Price = table.Column<decimal>(nullable: false),
+                    HasOrder = table.Column<bool>(nullable: false),
                     CrustId = table.Column<long>(nullable: true),
                     SizeId = table.Column<long>(nullable: true),
                     OrderId = table.Column<long>(nullable: true)
@@ -164,9 +165,9 @@ namespace PizzaBox.Storing.Migrations
                 columns: new[] { "CrustId", "Name", "Price" },
                 values: new object[,]
                 {
-                    { 637204041966931519L, "Thin Crust", 2.00m },
-                    { 637204041966960302L, "Deep Dish", 4.00m },
-                    { 637204041966960394L, "New York Style", 3.00m }
+                    { 637204907004122080L, "Thin Crust", 2.00m },
+                    { 637204907004140347L, "Deep Dish", 4.00m },
+                    { 637204907004140398L, "New York Style", 3.00m }
                 });
 
             migrationBuilder.InsertData(
@@ -174,9 +175,9 @@ namespace PizzaBox.Storing.Migrations
                 columns: new[] { "SizeId", "Name", "Price" },
                 values: new object[,]
                 {
-                    { 637204041966979578L, "Large", 12.00m },
-                    { 637204041966980132L, "Medium", 10.00m },
-                    { 637204041966980167L, "Small", 8.00m }
+                    { 637204907004152396L, "Large", 12.00m },
+                    { 637204907004152772L, "Medium", 10.00m },
+                    { 637204907004152789L, "Small", 8.00m }
                 });
 
             migrationBuilder.InsertData(
@@ -193,9 +194,9 @@ namespace PizzaBox.Storing.Migrations
                 columns: new[] { "ToppingId", "Name", "Price" },
                 values: new object[,]
                 {
-                    { 637204041966981362L, "Cheese", 0.25m },
-                    { 637204041966981880L, "Pepperoni", 0.50m },
-                    { 637204041966981920L, "Tomato Sauce", 0.75m }
+                    { 637204907004153562L, "Cheese", 0.25m },
+                    { 637204907004153875L, "Pepperoni", 0.50m },
+                    { 637204907004153900L, "Tomato Sauce", 0.75m }
                 });
 
             migrationBuilder.InsertData(

@@ -31,6 +31,7 @@ namespace PizzaBox.Client.Controllers
     public IActionResult Create(PizzaViewModels pizzaViewModels)
     {
       Pizza p = new Pizza();
+      p.HasOrder = false;
       List<Crust> CrustList = _cr.Get();
       List<Size> SizeList = _sr.Get();
       foreach(var item in CrustList)
@@ -38,6 +39,8 @@ namespace PizzaBox.Client.Controllers
         if(item.Name == pizzaViewModels.Crust)
         {
           p.Crust = item;
+          p.Name += item.Name;
+          p.Price += item.Price;
         }
       }
 
@@ -46,6 +49,8 @@ namespace PizzaBox.Client.Controllers
         if(item.Name == pizzaViewModels.Size)
         {
           p.Size = item;
+          p.Name += item.Name;
+          p.Price += item.Price;
         }
       }
 
@@ -56,7 +61,7 @@ namespace PizzaBox.Client.Controllers
       // }
       // p.PizzaToppings = ptl;
       _pr.Post(p);
-      return View(new PizzaViewModels());
+      return View("ConfirmPizza");
     }
   }
 }

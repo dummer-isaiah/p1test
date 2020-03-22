@@ -10,7 +10,7 @@ using PizzaBox.Storing.Databases;
 namespace PizzaBox.Storing.Migrations
 {
     [DbContext(typeof(PizzaBoxDbContext))]
-    [Migration("20200321211637_third")]
+    [Migration("20200322211820_third")]
     partial class third
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -41,19 +41,19 @@ namespace PizzaBox.Storing.Migrations
                     b.HasData(
                         new
                         {
-                            CrustId = 637204041966931519L,
+                            CrustId = 637204907004122080L,
                             Name = "Thin Crust",
                             Price = 2.00m
                         },
                         new
                         {
-                            CrustId = 637204041966960302L,
+                            CrustId = 637204907004140347L,
                             Name = "Deep Dish",
                             Price = 4.00m
                         },
                         new
                         {
-                            CrustId = 637204041966960394L,
+                            CrustId = 637204907004140398L,
                             Name = "New York Style",
                             Price = 3.00m
                         });
@@ -96,6 +96,9 @@ namespace PizzaBox.Storing.Migrations
 
                     b.Property<long?>("CrustId")
                         .HasColumnType("bigint");
+
+                    b.Property<bool>("HasOrder")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
@@ -155,19 +158,19 @@ namespace PizzaBox.Storing.Migrations
                     b.HasData(
                         new
                         {
-                            SizeId = 637204041966979578L,
+                            SizeId = 637204907004152396L,
                             Name = "Large",
                             Price = 12.00m
                         },
                         new
                         {
-                            SizeId = 637204041966980132L,
+                            SizeId = 637204907004152772L,
                             Name = "Medium",
                             Price = 10.00m
                         },
                         new
                         {
-                            SizeId = 637204041966980167L,
+                            SizeId = 637204907004152789L,
                             Name = "Small",
                             Price = 8.00m
                         });
@@ -218,19 +221,19 @@ namespace PizzaBox.Storing.Migrations
                     b.HasData(
                         new
                         {
-                            ToppingId = 637204041966981362L,
+                            ToppingId = 637204907004153562L,
                             Name = "Cheese",
                             Price = 0.25m
                         },
                         new
                         {
-                            ToppingId = 637204041966981880L,
+                            ToppingId = 637204907004153875L,
                             Name = "Pepperoni",
                             Price = 0.50m
                         },
                         new
                         {
-                            ToppingId = 637204041966981920L,
+                            ToppingId = 637204907004153900L,
                             Name = "Tomato Sauce",
                             Price = 0.75m
                         });

@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using PizzaBox.Client.Models;
+using PizzaBox.Domain.Models;
+using PizzaBox.Storing.Repository;
 
 namespace PizzaBox.Client.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+
+        private UserRepository _ur = new UserRepository();
 
         public HomeController(ILogger<HomeController> logger)
         {
@@ -26,6 +30,18 @@ namespace PizzaBox.Client.Controllers
         public IActionResult Privacy()
         {
             return View();
+        }
+
+        [HttpGet]
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+         public IActionResult Login(UserViewModel userViewModel)
+        {
+            return View("Navigate");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

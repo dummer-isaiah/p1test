@@ -15,6 +15,8 @@ namespace PizzaBox.Client.Controllers
      private CrustRepository _cr = new CrustRepository();
 
     private SizeRepository _sr = new SizeRepository();
+
+    private ToppingRepository _tr = new ToppingRepository();
     [HttpGet]
     public IActionResult Get()
     {
@@ -39,7 +41,7 @@ namespace PizzaBox.Client.Controllers
         if(item.Name == pizzaViewModels.Crust)
         {
           p.Crust = item;
-          p.Name += item.Name;
+          p.Name += item.Name + " ";
           p.Price += item.Price;
         }
       }
@@ -49,17 +51,44 @@ namespace PizzaBox.Client.Controllers
         if(item.Name == pizzaViewModels.Size)
         {
           p.Size = item;
-          p.Name += item.Name;
+          p.Name += item.Name + " ";
           p.Price += item.Price;
         }
       }
 
-      // List<PizzaTopping> ptl = new List<PizzaTopping>();
-      // foreach(var item in pizzaViewModels.Toppings)
-      // {
-      //   ptl.Add(new PizzaTopping(){Topping = item});
-      // }
-      // p.PizzaToppings = ptl;
+      for (int i = 0; i < pizzaViewModels.Count; i++)
+      {
+        if(i == 0)
+        {
+          if(!pizzaViewModels.Topping1)
+        {
+          pizzaViewModels.ToppingList.Remove(_tr.Get(pizzaViewModels.Toppings[i]));
+        }
+        }
+        else if(i ==1)
+        {
+          if(!pizzaViewModels.Topping2)
+        {
+          pizzaViewModels.ToppingList.Remove(_tr.Get(pizzaViewModels.Toppings[i]));
+        }
+        }
+        else
+        {
+          if(!pizzaViewModels.Topping3)
+        {
+          pizzaViewModels.ToppingList.Remove(_tr.Get(pizzaViewModels.Toppings[i]));
+        }
+        }
+          
+      }
+      List<PizzaTopping> lpt = new List<PizzaTopping>();
+      foreach (var item in pizzaViewModels.ToppingList)
+      {
+          p.Price += item.Price;
+          p.Name += item.Name + " ";
+           lpt.Add(new PizzaTopping(){Topping = item});
+      }
+      p.PizzaToppings = lpt;
       _pr.Post(p);
       return View("ConfirmPizza");
     }

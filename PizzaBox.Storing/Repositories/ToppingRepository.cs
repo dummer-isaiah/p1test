@@ -21,6 +21,11 @@ namespace PizzaBox.Storing.Repository
       return _db.Topping.SingleOrDefault(c => c.ToppingId == id);
     }
 
+    public Topping Get(string Name)
+    {
+      return _db.Topping.SingleOrDefault(t => t.Name == Name);
+    }
+
 
     public bool Post(Topping Topping)
     {

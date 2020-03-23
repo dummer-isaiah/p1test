@@ -9,6 +9,7 @@
           <option value="@item.Name">@item.Name</option>
       }
   </select>
+  <br>
 </div>
 <div>
   @foreach (var item in @Model.SizeList)
@@ -17,21 +18,33 @@
       @Html.RadioButtonFor(pvm => pvm.Size, @item.Name)@item.Name
       </label>
   }
+  <br>
 </div>
-@* <div>
-     @foreach (var item in @Model.ToppingList)
-  {
-      <label>
-      <input type="checkbox" name="@item.Name" value="item" />@item.Name
-      </label>
-  } 
-</div> *@
+ <div>
+    @for (int i = 0; i < @Model.Count; i++)
+    {
+      @if(i == 0)
+      {
+        @Html.CheckBoxFor(pvm => pvm.Topping1,true);
+        <label>@Model.Toppings[i]</label>
+      }
+      @if(i == 1)
+      {
+         @Html.CheckBoxFor(pvm => pvm.Topping2,true);
+        <label>@Model.Toppings[i]</label>
+      }
+      @if( i == 2)
+      {
+         @Html.CheckBoxFor(pvm => pvm.Topping3,true);
+        <label>@Model.Toppings[i]</label>
+      }
+        
+
+       
+    }
+    <br>
+</div> 
 <div>
   <button type="submit">Create</button>
 </div>
-
-  
-
-  
-
 </form>

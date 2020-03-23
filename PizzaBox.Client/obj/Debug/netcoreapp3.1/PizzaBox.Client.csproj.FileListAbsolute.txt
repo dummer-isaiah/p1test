@@ -192,3 +192,4 @@
 /home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Client/obj/Debug/netcoreapp3.1/Razor/Views/Order/UserHistory.cshtml.g.cs
 /home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Client/obj/Debug/netcoreapp3.1/Razor/Views/Store/StoreHistory.cshtml.g.cs
 /home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Client/obj/Debug/netcoreapp3.1/Razor/Views/Store/StoreSales.cshtml.g.cs
+/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Client/obj/Debug/netcoreapp3.1/Razor/Views/Home/Logout.cshtml.g.cs

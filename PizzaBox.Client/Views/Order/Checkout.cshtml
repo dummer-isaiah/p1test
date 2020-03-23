@@ -11,9 +11,12 @@
       <br>
     }
   }
+  <br>
 </div>
 <div>
-  <a href="/pizza/create">create pizza</a>
+  <a href="/pizza/create" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">create pizza</a>
+  <br>
+  <br>
 </div>
 <div>
   <form action="/order/checkout" method="post">
@@ -25,6 +28,8 @@
           <option value="@item.UName">@item.UName</option>
       }
     </select>
+    <br>
+    <br>
     </div>
     <div>
         <button type="submit">CheckOut</button>

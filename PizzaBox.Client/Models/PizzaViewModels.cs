@@ -23,13 +23,33 @@ namespace PizzaBox.Client.Models
 
     public string Crust { get; set; }
     public string Size { get; set; }
-    public List<Topping> Toppings { get; set; }
+
+    public int Count { get; set; }
+
+    public string[] Toppings { get; private set; }
+
+    
+    public bool Topping1 { get; set; }
+
+    public bool Topping2 { get; set; }
+
+    public bool Topping3 { get; set; }
 
     public PizzaViewModels()
     {
       CrustList = _cr.Get();
       SizeList = _sr.Get();
       ToppingList = _tr.Get();
+      Toppings = new string[ToppingList.Count];
+      
+      Count = ToppingList.Count;
+      int count = 0;
+      foreach(var item in ToppingList)
+      {
+        Toppings[count] = item.Name;
+        
+        count++;
+      }
     }
 
 

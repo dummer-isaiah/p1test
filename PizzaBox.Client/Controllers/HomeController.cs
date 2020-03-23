@@ -61,7 +61,7 @@ namespace PizzaBox.Client.Controllers
               if(userViewModel.UName == item.UName && userViewModel.Password == item.Password)
               {
                 isStore = true;
-                TempData["store"] = item;
+                TempData["store"] = item.UName;
               }
             }
 

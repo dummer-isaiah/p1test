@@ -1,0 +1,27 @@
+@model PizzaBox.Client.Models.StoreModel
+
+<div>
+  @if(@Model.Orders != null)
+{
+  @foreach (var item in @Model.Orders)
+{
+      <label>Order Number: </label>
+      <label>@item.OrderId</label>
+      <br>
+      @foreach (var i in @Model.Pizzas)
+      {
+          if(i.Order == item)
+          {
+            <label>@i.Name</label>
+            <label> Price: </label>
+            <label>@i.Price</label>
+            <br>
+          }
+      }
+}
+}
+</div>
+<div>
+  <a href="/store/gonav2"> go back to main menu</a>
+  
+</div>

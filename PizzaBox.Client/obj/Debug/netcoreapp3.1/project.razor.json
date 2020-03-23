@@ -20531,6 +20531,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Client/Views/Store/StoreSales.cshtml",
+      "TargetPath": "Views\\Store\\StoreSales.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Client/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -20553,6 +20558,11 @@
     {
       "FilePath": "/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Client/Views/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Client/Views/Store/StoreHistory.cshtml",
+      "TargetPath": "Views\\Store\\StoreHistory.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -1,23 +1,36 @@
 @model PizzaBox.Client.Models.OrderViewModel
 
-
-@if(@Model.Pizzas != null)
-{
-  @foreach (var item in @Model.Pizzas)
+<div>
+  @if(@Model.Pizzas != null)
   {
-    <label>@item.Name</label>
+    @foreach (var item in @Model.Pizzas)
+    {
+      <label>@item.Name</label>
+      <label> Price: </label>
+      <label>@item.Price</label>
+      <br>
+    }
   }
-}
-
-<a href="/pizza/create">create pizza</a>
-
-<form action="/order/checkout" method="post">
-@Html.AntiForgeryToken()
-<select asp-for="@Model.store">
+</div>
+<div>
+  <a href="/pizza/create">create pizza</a>
+</div>
+<div>
+  <form action="/order/checkout" method="post">
+    @Html.AntiForgeryToken()
+    <div>
+      <select asp-for="@Model.store">
       @foreach (var item in @Model.Stores)
       {
           <option value="@item.UName">@item.UName</option>
       }
-  </select>
-<button type="submit">CheckOut</button>
-</form>
+    </select>
+    </div>
+    <div>
+        <button type="submit">CheckOut</button>
+    </div>
+    
+  </form>
+</div>
+
+

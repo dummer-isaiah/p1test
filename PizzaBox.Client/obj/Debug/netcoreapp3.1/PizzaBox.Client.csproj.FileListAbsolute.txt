@@ -187,3 +187,6 @@
 /home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Client/obj/Debug/netcoreapp3.1/Razor/Views/Order/Checkout.cshtml.g.cs
 /home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Client/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Navigate.cshtml.g.cs
 /home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Client/obj/Debug/netcoreapp3.1/Razor/Views/Shared/ConfirmPizza.cshtml.g.cs
+/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Client/obj/Debug/netcoreapp3.1/Razor/Views/Home/FailedLogin.cshtml.g.cs
+/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Client/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Navigate2.cshtml.g.cs
+/home/dummer-isaiah/revature_projects/p1/p1-dummer-isaiah/PizzaBox.Client/obj/Debug/netcoreapp3.1/Razor/Views/Order/UserHistory.cshtml.g.cs

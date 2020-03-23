@@ -10,7 +10,7 @@ namespace PizzaBox.Client.Models
 
     private PizzaRepository _pr = new PizzaRepository();
 
-    private StoreRepository _sr = new StoreRepository();
+    private StoreRepostitory _sr = new StoreRepostitory();
 
     public List<Pizza> Pizzas { get; set; }
 

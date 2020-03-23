@@ -17,6 +17,8 @@ namespace PizzaBox.Client.Controllers
 
         private UserRepository _ur = new UserRepository();
 
+        private StoreRepostitory _sr = new StoreRepostitory();
+
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -41,7 +43,41 @@ namespace PizzaBox.Client.Controllers
         [HttpPost]
          public IActionResult Login(UserViewModel userViewModel)
         {
-            return View("Navigate");
+            bool isUser = false;
+            bool isStore = false;
+            List<User> ul = _ur.Get();
+            List<Store> sl = _sr.Get();
+            foreach(var item in ul)
+            {
+              if(userViewModel.UName == item.UName && userViewModel.Password == item.Password)
+              {
+                isUser = true;
+                TempData["user"] = item.UName;
+              }
+            }
+
+            foreach(var item in sl)
+            {
+              if(userViewModel.UName == item.UName && userViewModel.Password == item.Password)
+              {
+                isStore = true;
+                TempData["store"] = item;
+              }
+            }
+
+            if(isUser)
+            {
+              return View("Navigate");
+            }
+            else if(isStore)
+            {
+              return View("Navigate2");
+            }
+            else
+            {
+              return View("FailedLogin");
+            }
+            
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

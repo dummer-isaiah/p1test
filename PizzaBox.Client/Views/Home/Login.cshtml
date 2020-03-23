@@ -2,15 +2,20 @@
 
 <form action="/home/login" method="post">
   @Html.AntiForgeryToken()
+  <div>
+    <label asp-for="@Model.UName">username</label>
+    <input type="text" asp-for="@Model.UName" />
+   @Html.ValidationMessageFor(avm => avm.UName)
 
-  <label asp-for="@Model.UName">username</label>
-  <input type="text" asp-for="@Model.UName" />
+  </div>
+  <div>
+    <label asp-for="@Model.Password">password</label>
+    <input type="password" asp-for="@Model.Password" />
+    @Html.ValidationMessageFor(avm => avm.Password)
+  </div>
+  <div>
+    <button type="reset">Clear</button>
+    <button type="submit">Login</button>
+  </div>
   
-
-  <label asp-for="@Model.Password">password</label>
-  <input type="password" asp-for="@Model.Password" />
-  
-
-  <button type="reset">Clear</button>
-  <button type="submit">Login</button>
 </form>

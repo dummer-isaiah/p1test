@@ -72,7 +72,7 @@ stages:
               ConnectionType: "AzureRM"
               azureSubscription: "p1testdeploy"
               appType: "webAppContainer"
-              WebAppName: "trainingdotnet2020"
+              WebAppName: "dummerisaiahp1webapp"
               DockerNamespace: "114117"
               DockerRepository: "p1"
 

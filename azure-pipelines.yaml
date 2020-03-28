@@ -58,7 +58,7 @@ stages:
               DOCKER_IMAGE: $(image_name)
           - task: Docker@2
             inputs:
-              containerRegistry: "docker"
+              containerRegistry: "p1test"
               command: "logout"
 
   - stage: deploy
